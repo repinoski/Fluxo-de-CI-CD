@@ -1,6 +1,10 @@
 import random
 
-print('Bem vindo ao jogo!')
+print('╔════════════════════╗')
+print('  Bem vindo ao jogo!')
+print('╚════════════════════╝')
+
+
 def descubra():
     num= random.randint(1,100)
     while True:
