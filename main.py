@@ -20,6 +20,5 @@ def descubra():
         else:
             print("Você errou o número, tente mais uma vez")
 
-
 if __name__ == '__main__':
     descubra()
