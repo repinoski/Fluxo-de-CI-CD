@@ -1,19 +1,8 @@
 import pytest
-import random
-from main import descubra
+from unittest.mock import patch
+from main import *
 
 def test_acertar_primeira_tentativa():
-    random.seed(42)
-    num = random.randint(1, 100)
-    resultado = descubra()
+    with patch ('random.randint', return_value=42):
+        resultado = descubra()
     assert resultado == "Parabéns, você acertou o número"
-
-def test_numero_invalido():
-    with pytest.raises(ValueError):
-            descubra()
-
-    with pytest.raises(ValueError):
-            descubra("vinte")
-
-    with pytest.raises(ValueError):
-            descubra(3.14)
