@@ -11,7 +11,8 @@ def descubra():
         tentativa= int(input('Tente acertar o número: '))
 
         if tentativa == num:
-            print("Parabéns, você acertou o número")
+            print ("Parabéns, você acertou o número")
+            return "Parabéns, você acertou o número"
             break
         elif tentativa > num:
             print("Seu palpite foi muito alto")
